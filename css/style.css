@@ -1,0 +1,357 @@
+/*TEXT FONT IMPORT - FAMILY: INTER*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+/*STYLE PROPERTIES RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+body {
+    background-color: #011c39;
+    color: white;
+}
+
+.contenido {
+    display: grid;
+    background-color: #042240;
+    margin: 0 15% 0 15%;
+    min-height: 101vh;
+    grid-template-rows: auto 1fr auto;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.50);
+}
+
+.navegacion {
+    display: flex;
+    color: white;
+    margin: 30px 0 30px 0;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline-block;    
+}
+
+header nav ul li a {
+    color: white;
+    margin: 0 0 0 50px;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+header nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.hero {
+    display: flex;
+    background-image: url(../img/hero.jpg);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: top;
+    font-size: 35px;
+}
+
+.hero h1 {
+    color: black;
+    margin: 5% 10% 0 10%;
+    text-align: center;
+    text-shadow: black 0px 0px 30px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.info {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10% 0 10%;
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #011c39;
+    padding-top: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a i {
+    font-size: 64px;
+}
+
+.titulos {
+    margin: 0px 0 20px 20px;
+    color: goldenrod;
+    font-size: 25px;
+    font-family: Inter;
+}
+
+.buscar {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscar h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: goldenrod;
+}
+
+.buscador {
+    display: flex;
+    justify-content: right;
+}
+
+main section input {
+    height: 30px;
+}
+
+.boton {
+    height: 34px;
+    width: 70px;
+}
+
+.jugador {
+    display: flex;
+    margin: 0 0 30px 10px;
+}
+
+.imagen-integrante {
+    width: 200px;
+    max-height: 200px;
+}
+
+.descripcion-integrante {
+    padding: 10px 30px 10px 30px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+main section div h3 {
+    margin-bottom: 10px;
+}
+
+.creacion h1 {
+    margin: 20px 0 20px 20px;
+    color: goldenrod;
+    font-size: 25px;
+}
+
+.creacion h3 {
+    margin: 20px 0 0 10px;
+    color: goldenrod;
+}
+
+.creacion p {
+    text-align: justify;
+    margin: 10px 10px 10px 10px;
+}
+
+/*UTILIZACION DE PSEUDOCLASES*/
+
+.navegacion a:hover {
+    color: goldenrod;
+}
+
+.boton:hover {
+    color: white;
+    background-color: goldenrod;
+}
+/**/
+.descripcion-integrante h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+.jugador:hover {
+    background-color: #191919;
+}
+
+.jugador:active {
+    color: black;
+    /*.descripcion-integrante h2 | color: black;*/
+    background-color: goldenrod;
+}
+
+/*MODIFICACIONES AL ACORDEON DE BOOTSTRAP*/
+
+.accordion-item {
+    margin: 20px 10px 20px 10px;
+}
+
+.accordion-button {
+    font-size: 20px;
+}
+
+.accordion-body {
+    background-color: goldenrod;
+    color: black;
+}
+
+/*COMIENZO DE LAS MEDIA QUERIES*/
+/* Se reduce el ancho de los bordes laterales
+Se achica el espaciado de los items del NAV
+El buscador de Integrantes se reduce en tamaño
+Se achican las imagenes de los integrantes
+*/
+@media screen and (max-width: 1080px) {
+    .contenido {
+        margin: 0 8% 0 8%;
+    }
+
+    header nav ul li a {
+        color: white;
+        margin: 0 0 0 20px;
+    }
+
+    .input-texto {
+        max-width: 130px;
+    }
+
+    .boton {
+        max-width: 50px;
+    }
+
+    .buscar {
+        margin: 30px 15px 30px 15px;
+    }
+
+    .imagen-integrante {
+        height: 150px;
+        width: 150px;
+    }
+
+    .hero {
+        height: 550px;
+    }
+}
+
+/*Se eliminan los bordes laterales
+Se achican mas las imagenes de los integrantes*/
+@media screen and (max-width: 720px) {
+    .contenido {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .imagen-integrante {
+        height: 100px;
+        width: 100px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+/*Se utiliza un NAV mas chico
+Se reducen los tamaños del texto*/
+@media screen and (max-width: 600px) {
+    .navegacion {
+        margin: 10px 0 10px 0;
+        padding: 0 5px 0 5px;
+        font-size: 15px;
+    }
+
+    header nav ul li a {
+        margin: 0 0 0 10px;
+    }
+
+    .buscar h1 {
+        font-size: 15px;
+    }
+
+    .descripcion-integrante {
+        padding: 0px 15px 10px 15px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+
+    }
+
+    .descripcion-integrante h2 {
+        font-size: 15px;
+    }
+
+    .descripcion-integrante p {
+        font-size: 15px;
+    }
+
+    .creacion h1 {
+        font-size: 20px;
+    }
+
+    .titulos {
+        font-size: 20px;
+    }
+}
+
+/*Se utiliza un NAV mas chico y vertical*/
+@media screen and (max-width: 400px) {
+    .navegacion {
+        margin: 10px 0 10px 0;
+        padding: 0 5px 0 5px;
+        font-size: 10px;
+    }
+
+    .buscar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscar h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .jugador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descripcion-integrante {
+        padding: 5px 5px 5px 5px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        text-align: center;
+    }
+
+    .imagen-integrante {
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
