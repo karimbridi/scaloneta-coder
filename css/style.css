@@ -23,15 +23,6 @@ body {
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.50);
 }
 
-.nav-link {
-    font-family: Inter;
-    font-size: 22px;
-    color: white;
-    text-decoration: none;
-    padding: 3px;
-    margin-right: 10px;
-}
-
 .web-logo {
     height: 40px;
 }
@@ -195,11 +186,15 @@ main section input {
     margin: 10px 10px 10px 10px;
 }
 
+.accordion-body p {
+    text-align: justify;
+}
+
 .foro-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20% 0 20%;
+    margin: 0 20% 20PX 20%;
     padding: 20px;
     border: 2px goldenrod solid;
     border-radius: 25px;
@@ -215,7 +210,7 @@ main section input {
     padding-left: 10px;
     align-items: center;
     justify-content: space-between;
-    width: auto;
+    width: 100% !important;
 }
 
 .foro-input input {
@@ -224,6 +219,19 @@ main section input {
     margin-left: 10px;
     padding-left: 10px;
     border-radius: 8px;
+    width: 100% !important;
+}
+
+.foro-input textarea {
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100% !important;
+}
+
+.foro-input label {
+    display: block;
 }
 
 /*UTILIZACION DE PSEUDOCLASES*/
@@ -234,6 +242,10 @@ main section input {
 
 .web-logo:hover {
     height: 45px;
+}
+
+.web-afa:hover {
+    content: url("../img/afa-gold.png");
 }
 
 .boton:hover {
@@ -256,6 +268,41 @@ main section input {
     border-color: goldenrod;
 }
 
+/*MODIFICACIONES A LA NAVBAR DE BOOTSTRAP*/
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar {
+    min-height: 80px;
+    border-bottom: 1px solid white;
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+    opacity: 50%;
+}
+
+.nav-link {
+    font-family: Inter;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 0px !important;
+    margin: 0 0 0 40px;
+}
+
+.container-fluid {
+    margin: 0 10px 0 10px;
+    padding: 0;
+}
+
+.me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
 /*MODIFICACIONES AL ACORDEON DE BOOTSTRAP*/
 
 .accordion-item {
@@ -271,58 +318,24 @@ main section input {
     color: black;
 }
 
-/*MODIFICACIONES A LA NAVBAR DE BOOTSTRAP*/
-
-.navbar {
-    min-height: 80px;
-    border-bottom: 1px solid white;
-}
-
-.navbar-toggler {
-    border: 1px solid white;
-    opacity: 50%;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.container-fluid {
-    margin: 0 0 0 10px;
-}
-
-.me-auto {
-    margin-right: 0 !important;
-    margin-left: auto !important;
-}
-
 /*MEDIA QUIERIES*/
-/*@media (min-width: 992px)*/
 
-
-
-/* Se reduce el ancho de los bordes laterales
-Se achica el espaciado de los items del NAV
-El buscador de Integrantes se reduce en tamaño
-Se achican las imagenes de los integrantes
-*/
-/*
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1440px) {
     .contenido {
         margin: 0 8% 0 8%;
     }
+}
 
-    header nav ul li a {
-        color: white;
-        margin: 0 0 0 20px;
+@media screen and (max-width: 992px) {
+
+    .input-buscar {
+        max-width: 145px;
+        font-size: 14px;
     }
 
-    .input-texto {
-        max-width: 130px;
-    }
-
-    .boton {
-        max-width: 50px;
+    .boton-buscar {
+        max-width: 55px;
+        font-size: 14px;
     }
 
     .buscar {
@@ -337,10 +350,27 @@ Se achican las imagenes de los integrantes
     .hero {
         height: 550px;
     }
+
+    .nav-link, .container-fluid div {
+        display: flex;
+        justify-content: right;
+        margin: 3px 0 3px 0;
+        font-size: 20px;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
+    }
+
+    .h3-foro {
+        font-size: 20PX;
+    }
+
+    .foro-form {
+        margin: 0 10% 20PX 10%;
+    }
 }
 
-/*Se eliminan los bordes laterales
-Se achican mas las imagenes de los integrantes*/
 @media screen and (max-width: 720px) {
     .contenido {
         margin: 0;
@@ -352,26 +382,23 @@ Se achican mas las imagenes de los integrantes*/
         width: 100px;
     }
 
+    .descripcion-integrante {
+        padding: 0 10px 10px 10px;
+    }
+
     .hero {
         height: 500px;
     }
-
-    .hero h1 {
-        font-size: 40px;
+    .hero-text {
+        font-size: 30px;
     }
 }
 
-/*Se utiliza un NAV mas chico
-Se reducen los tamaños del texto*/
 @media screen and (max-width: 600px) {
-    .navegacion {
-        margin: 10px 0 10px 0;
-        padding: 0 5px 0 5px;
-        font-size: 15px;
-    }
 
-    header nav ul li a {
-        margin: 0 0 0 10px;
+    .hero-text, .info {
+        font-size: 25px;
+        line-height: 40px;
     }
 
     .buscar h1 {
@@ -382,7 +409,6 @@ Se reducen los tamaños del texto*/
         padding: 0px 15px 10px 15px;
         grid-column-start: 2;
         grid-column-end: 2;
-
     }
 
     .descripcion-integrante h2 {
@@ -400,14 +426,32 @@ Se reducen los tamaños del texto*/
     .titulos {
         font-size: 20px;
     }
+    
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    .descripcion-integrante p {
+        font-size: 12px;
+    }
+
+    .comentarios {
+        font-size: 20px;
+    }
+
+    .foro-input label {
+        display: none;
+    }
+
+    .h3-foro {
+        font-size: 18px;
+    }
 }
 
-/*Se utiliza un NAV mas chico y vertical*/
 @media screen and (max-width: 400px) {
-    .navegacion {
-        margin: 10px 0 10px 0;
-        padding: 0 5px 0 5px;
-        font-size: 10px;
+
+    .hero, .info {
+        height: 350px;
     }
 
     .buscar {
@@ -419,6 +463,7 @@ Se reducen los tamaños del texto*/
     .buscar h1 {
         text-align: center;
         margin-bottom: 10px;
+        font-size: 15px;
     }
 
     .jugador {
@@ -438,9 +483,19 @@ Se reducen los tamaños del texto*/
         margin-bottom: 10px;
     }
 
-    .hero h1 {
-        font-size: 30px;
+    .hero-text, .info {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .creacion p, .accordion-body {
+        font-size: 12px;
+    }
+
+    .foro-form {
+        margin: 0 10px 20PX 10px;
+    }
+    .h3-foro, .foro-input {
+        font-size: 14px;
     }
 }
-
-*/
