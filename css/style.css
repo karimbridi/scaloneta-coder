@@ -1,5 +1,5 @@
 /*TEXT FONT IMPORT - FAMILY: INTER*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap');
 
 /*STYLE PROPERTIES RESET*/
 * {
@@ -23,36 +23,17 @@ body {
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.50);
 }
 
-.navegacion {
-    display: flex;
-    color: white;
-    margin: 30px 0 30px 0;
-    justify-content: space-between;
-    padding: 0 10px 0 10px;
-    font-size: 20px;
-}
-
-header nav ul li {
-    display: inline-block;    
-}
-
-header nav ul li a {
-    color: white;
-    margin: 0 0 0 50px;
-    text-decoration: none;
+.nav-link {
     font-family: Inter;
-}
-
-header nav a {
+    font-size: 22px;
     color: white;
     text-decoration: none;
-    font-family: Inter;
+    padding: 3px;
+    margin-right: 10px;
 }
 
-header nav ul {
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: left;
+.web-logo {
+    height: 40px;
 }
 
 .hero {
@@ -61,16 +42,21 @@ header nav ul {
     height: 650px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     align-items: top;
-    font-size: 35px;
 }
 
-.hero h1 {
+.hero-text {
+    font-size: 35px;
+    font-weight: 400;
     color: black;
-    margin: 5% 10% 0 10%;
+    margin: 5% 10% 0% 10%;
+    padding: 0 5px 8px 5px;
     text-align: center;
-    text-shadow: black 0px 0px 30px;
-    padding: 10px;
+    background-color: goldenrod;
+    border-radius: 5px 5px 40px 40px;
+    line-height: 45px;
+    box-shadow: 10px 0 0px 0px #EDC330, -10px 0 0px 0px #EDC330;
     height: fit-content;
 }
 
@@ -86,26 +72,34 @@ header nav ul {
 
 footer {
     display: flex;
-    height: 100px;
+    height: 120px;
     justify-content: space-evenly;
     align-items: center;
     background-color: #011c39;
-    padding-top: 20px;
+    padding: 0;
+
 }
 
-footer a {
+.wpp-icon i {
     color: white;
-}
-
-footer a i {
-    font-size: 64px;
+    font-size: 60px;
+    height: 30px;
 }
 
 .titulos {
-    margin: 0px 0 20px 20px;
+    margin: 20px 0 20px 20px;
+    font-family: Inter;
     color: goldenrod;
     font-size: 25px;
+    font-weight: 400;
+}
+
+.comentarios {
+    margin: 20px 0 20px 20px;
     font-family: Inter;
+    color: goldenrod;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .buscar {
@@ -131,9 +125,15 @@ main section input {
     height: 30px;
 }
 
-.boton {
-    height: 34px;
+.boton-buscar {
+    height: 30px;
     width: 70px;
+}
+
+.input-buscar {
+    height: 30px;
+    width: 200px;
+    padding: 0 5px 0 5px;
 }
 
 .jugador {
@@ -152,19 +152,42 @@ main section input {
     grid-column-end: 2;
 }
 
-main section div h3 {
-    margin-bottom: 10px;
+.buscar h1 {
+    font-family: Inter;
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.creacion h1 {
-    margin: 20px 0 20px 20px;
+.descripcion-integrante h2 {
+    margin-bottom: 10px;
+    font-family: Inter;
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.h3-historia, .h3-foro {
+    margin-bottom: 10px;
+    font-family: Inter;
     color: goldenrod;
     font-size: 25px;
 }
 
-.creacion h3 {
-    margin: 20px 0 0 10px;
+.creacion h1 {
+    margin: 20px 0 20px 20px;
+    font-family: Inter;
     color: goldenrod;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.creacion h3 {
+    padding: 20px 0 0 10px;
+    color: goldenrod;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .creacion p {
@@ -172,21 +195,50 @@ main section div h3 {
     margin: 10px 10px 10px 10px;
 }
 
+.foro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20% 0 20%;
+    padding: 20px;
+    border: 2px goldenrod solid;
+    border-radius: 25px;
+}
+
+.foro-input {
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    background-color: goldenrod;
+    color: black;
+    margin: 10px 0 10px 0;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.foro-input input {
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
 /*UTILIZACION DE PSEUDOCLASES*/
 
-.navegacion a:hover {
+.navegacion a:hover, .nav-link:hover, .wpp-icon i:hover {
     color: goldenrod;
+}
+
+.web-logo:hover {
+    height: 45px;
 }
 
 .boton:hover {
     color: white;
     background-color: goldenrod;
-}
-/**/
-.descripcion-integrante h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: goldenrod;
 }
 
 .jugador:hover {
@@ -197,6 +249,11 @@ main section div h3 {
     color: black;
     /*.descripcion-integrante h2 | color: black;*/
     background-color: goldenrod;
+}
+
+.boton-buscar:hover, .input-buscar:hover, .input-buscar:focus {
+    background-color: goldenrod;
+    border-color: goldenrod;
 }
 
 /*MODIFICACIONES AL ACORDEON DE BOOTSTRAP*/
@@ -214,12 +271,42 @@ main section div h3 {
     color: black;
 }
 
-/*COMIENZO DE LAS MEDIA QUERIES*/
+/*MODIFICACIONES A LA NAVBAR DE BOOTSTRAP*/
+
+.navbar {
+    min-height: 80px;
+    border-bottom: 1px solid white;
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+    opacity: 50%;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.container-fluid {
+    margin: 0 0 0 10px;
+}
+
+.me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/*MEDIA QUIERIES*/
+/*@media (min-width: 992px)*/
+
+
+
 /* Se reduce el ancho de los bordes laterales
 Se achica el espaciado de los items del NAV
 El buscador de Integrantes se reduce en tamaño
 Se achican las imagenes de los integrantes
 */
+/*
 @media screen and (max-width: 1080px) {
     .contenido {
         margin: 0 8% 0 8%;
@@ -355,3 +442,5 @@ Se reducen los tamaños del texto*/
         font-size: 30px;
     }
 }
+
+*/
