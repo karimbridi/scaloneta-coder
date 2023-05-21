@@ -68,8 +68,24 @@ footer {
     align-items: center;
     background-color: #011c39;
     padding: 0;
-
 }
+
+.link-wpp, .link-afa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 15px;
+    color: white;
+}
+
+.link-wpp p {
+    margin-left: 8px;
+}    
+
+.link-wpp p, .link-afa p {
+    margin-bottom: 0px;
+} 
 
 .wpp-icon i {
     color: white;
@@ -446,6 +462,22 @@ main section input {
     .h3-foro {
         font-size: 18px;
     }
+
+    .link-wpp, .link-afa {
+        width: 160px;
+    }
+
+    .link-wpp p, .link-afa p {
+        font-size: 12px;
+    }
+
+    .web-afa {
+        width: 50px;
+    }
+
+    .wpp-icon i {
+        font-size: 45px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -497,5 +529,13 @@ main section input {
     }
     .h3-foro, .foro-input {
         font-size: 14px;
+    }
+
+    .link-wpp, .link-afa {
+        width: auto;
+    }
+
+    .link-wpp p, .link-afa p {
+        display: none;
     }
 }
