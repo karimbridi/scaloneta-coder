@@ -1,0 +1,250 @@
+body {
+    background-color: $color-page;
+    color: $color-texto;
+
+    .contenido {
+        display: grid;
+        background-color: $color-main;
+        margin: 0 15% 0 15%;
+        min-height: 101vh;
+        grid-template-rows: auto 1fr auto;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.50);
+    }
+
+    main {
+        font-family: $web-font;
+        /*PAGINA INDEX*/
+        .hero {
+            display: flex;
+            background-image: url(../img/hero.jpg);
+            height: 650px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            align-items: top;
+
+            .hero-text {
+                @include text (Inter, 35px, 400, none, black);
+                margin: 5% 10% 0% 10%;
+                padding: 0 5px 8px 5px;
+                text-align: center;
+                background-color: $color-acento;
+                border-radius: 5px 5px 40px 40px;
+                line-height: 45px;
+                box-shadow: 10px 0 0px 0px #EDC330, -10px 0 0px 0px #EDC330;
+                height: fit-content;
+            }
+        }
+
+        .info {
+            @extend %centered-flex;
+            height: 500px;
+            padding: 0 10% 0 10%;
+            font-size: 30px;
+            background: linear-gradient(55deg, rgba(1,28,57,1) 0%, rgba(1,67,94,1) 60%, rgba(0,119,143,1) 100%);
+        }
+
+        /*PAGINA HISTORIA*/
+        .creacion {
+            h1 {
+                margin: 20px 0 20px 20px;
+                font-family: $web-font;
+                color: $color-acento;
+                font-size: 25px;
+                font-weight: 400;
+            }
+
+            .h3-historia {
+                padding: 20px 0 0 10px;
+                color: $color-acento;
+                font-family: $web-font;
+                font-size: 20px;
+                font-size: nth($weight-fuente, 2);
+            }
+
+            P {
+                text-align: justify;
+                margin: 10px 10px 10px 10px;
+            }
+        }
+
+        /*PAGINA TITULOS*/
+        .titulos {
+            margin: 20px 0 20px 20px;
+            font-family: $web-font;
+            color: $color-acento;
+            font-size: 25px;
+            font-size: nth($weight-fuente, 2);
+        }
+
+        div {
+            .accordion-item {
+                margin: 20px 10px 20px 10px;
+
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 20px;
+                    }
+                }
+
+                div {
+                    .accordion-body {
+                        background-color: $color-acento;
+                        color: black;
+
+                        p {
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        /*PAGINA INTEGRANTES*/
+        .buscar {
+            display: flex;
+            margin: 30px;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                margin: 0;
+                padding: 0;
+                color: $color-acento;
+                font-family: $web-font;
+                font-size: 20px;
+                font-size: nth($weight-fuente, 2);
+            }
+
+            .buscador {
+                display: flex;
+                justify-content: right;
+
+                .input-buscar {
+                    height: 30px;
+                    width: 200px;
+                    padding: 0 5px 0 5px;
+                    &:hover, &:focus {
+                        background-color: $color-acento;
+                        border-color: $color-acento;
+                    }
+                }
+
+                .boton-buscar {
+                    height: 30px;
+                    width: 70px;
+                    &:hover{
+                        color: $color-contraste;
+                        background-color: $color-acento;
+                    }
+                }
+            }
+        }
+
+        .jugador {
+            display: flex;
+            margin: 0 0 30px 10px;
+            &:hover {
+                background-color: $color-oscuro;
+            }
+            &:active {
+                color: black;
+                background-color: $color-acento;
+            }
+            .imagen-integrante {
+                width: 200px;
+                max-height: 200px;
+            }
+
+            .descripcion-integrante {
+                padding: 10px 30px 10px 30px;
+                grid-column-start: 2;
+                grid-column-end: 2;
+
+                h2 {
+                    margin-bottom: 10px;
+                    font-family: $web-font;
+                    color: $color-acento;
+                    font-size: 20px;
+                    font-size: nth($weight-fuente, 2);
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        /*PAGINA FORO*/
+        section {
+            .comentarios {
+                margin: 20px 0 20px 20px;
+                font-family: $web-font;
+                color: $color-acento;
+                font-size: 25px;
+                font-size: nth($weight-fuente, 2);
+            }
+
+            .foro-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 20% 20px 20%;
+                padding: 20px;
+                border: 2px $color-acento solid;
+                border-radius: 25px;
+
+                .h3-foro {
+                    margin-bottom: 10px;
+                    font-family: $web-font;
+                    color: $color-acento;
+                    font-size: 25px;
+                }
+
+                .foro-input {
+                    display: flex;
+                    flex-direction: row;
+                    border-radius: 8px;
+                    background-color: $color-acento;
+                    color: black;
+                    margin: 10px 0 10px 0;
+                    padding-left: 10px;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100% !important;
+
+                    input {
+                        height: 40px;
+                        border: none;
+                        margin-left: 10px;
+                        padding-left: 10px;
+                        border-radius: 8px;
+                        width: 100% !important;
+                    }
+
+                    textarea {
+                        border: none;
+                        margin-left: 10px;
+                        padding: 10px;
+                        border-radius: 8px;
+                        width: 100% !important;
+                    }
+
+                    label {
+                        display: block;
+                    }
+                }
+
+                .boton-enviar {
+                    height: 30px;
+                    width: 70px;
+                    &:hover {
+                        color: $color-contraste;
+                        background-color: $color-acento;
+                    }
+                }
+            }
+        }
+    }
+}

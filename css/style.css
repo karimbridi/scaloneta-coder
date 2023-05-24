@@ -101,14 +101,6 @@ footer {
     font-weight: 400;
 }
 
-.comentarios {
-    margin: 20px 0 20px 20px;
-    font-family: Inter;
-    color: goldenrod;
-    font-size: 25px;
-    font-weight: 400;
-}
-
 .buscar {
     display: flex;
     margin: 30px;
@@ -206,6 +198,14 @@ main section input {
     text-align: justify;
 }
 
+.comentarios {
+    margin: 20px 0 20px 20px;
+    font-family: Inter;
+    color: goldenrod;
+    font-size: 25px;
+    font-weight: 400;
+}
+
 .foro-form {
     display: flex;
     flex-direction: column;
@@ -252,7 +252,7 @@ main section input {
 
 /*UTILIZACION DE PSEUDOCLASES*/
 
-.navegacion a:hover, .nav-link:hover, .wpp-icon i:hover {
+.nav-link:hover, .wpp-icon i:hover {
     color: goldenrod;
 }
 
@@ -279,7 +279,7 @@ main section input {
     background-color: goldenrod;
 }
 
-.boton-buscar:hover, .input-buscar:hover, .input-buscar:focus {
+.boton-buscar:hover, .boton-enviar:hover, .input-buscar:hover, .input-buscar:focus {
     background-color: goldenrod;
     border-color: goldenrod;
 }
@@ -379,11 +379,11 @@ main section input {
     }
 
     .h3-foro {
-        font-size: 20PX;
+        font-size: 20px;
     }
 
     .foro-form {
-        margin: 0 10% 20PX 10%;
+        margin: 0 10% 20px 10%;
     }
 }
 

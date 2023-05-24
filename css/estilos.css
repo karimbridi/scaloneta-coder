@@ -1,0 +1,390 @@
+/*SE TRADUCE EN EL ORDEN QUE ESTEN LISTADOS LOS IMPORT*/
+/*USO DE VARIABLES*/
+/*USO DE LISTAS*/
+/*USO DE EXTEND*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap");
+body main .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/*USO DE MIXINS*/
+/*TEXT FONT IMPORT - FAMILY: INTER*/
+/*STYLE PROPERTIES RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: Inter; }
+
+body {
+  background-color: #011C39;
+  color: white; }
+  body .contenido {
+    display: grid;
+    background-color: #042240;
+    margin: 0 15% 0 15%;
+    min-height: 101vh;
+    grid-template-rows: auto 1fr auto;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5); }
+  body main {
+    font-family: Inter;
+    /*PAGINA INDEX*/
+    /*PAGINA HISTORIA*/
+    /*PAGINA TITULOS*/
+    /*PAGINA INTEGRANTES*/
+    /*PAGINA FORO*/ }
+    body main .hero {
+      display: flex;
+      background-image: url(../img/hero.jpg);
+      height: 650px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      align-items: top; }
+      body main .hero .hero-text {
+        font-family: Inter;
+        font-size: 35px;
+        font-weight: 400;
+        font-style: none;
+        color: black;
+        margin: 5% 10% 0% 10%;
+        padding: 0 5px 8px 5px;
+        text-align: center;
+        background-color: goldenrod;
+        border-radius: 5px 5px 40px 40px;
+        line-height: 45px;
+        box-shadow: 10px 0 0px 0px #EDC330, -10px 0 0px 0px #EDC330;
+        height: fit-content; }
+    body main .info {
+      height: 500px;
+      padding: 0 10% 0 10%;
+      font-size: 30px;
+      background: linear-gradient(55deg, #011c39 0%, #01435e 60%, #00778f 100%); }
+    body main .creacion h1 {
+      margin: 20px 0 20px 20px;
+      font-family: Inter;
+      color: goldenrod;
+      font-size: 25px;
+      font-weight: 400; }
+    body main .creacion .h3-historia {
+      padding: 20px 0 0 10px;
+      color: goldenrod;
+      font-family: Inter;
+      font-size: 20px;
+      font-size: 400; }
+    body main .creacion P {
+      text-align: justify;
+      margin: 10px 10px 10px 10px; }
+    body main .titulos {
+      margin: 20px 0 20px 20px;
+      font-family: Inter;
+      color: goldenrod;
+      font-size: 25px;
+      font-size: 400; }
+    body main div .accordion-item {
+      margin: 20px 10px 20px 10px; }
+      body main div .accordion-item .accordion-header .accordion-button {
+        font-size: 20px; }
+      body main div .accordion-item div .accordion-body {
+        background-color: goldenrod;
+        color: black; }
+        body main div .accordion-item div .accordion-body p {
+          text-align: justify; }
+    body main .buscar {
+      display: flex;
+      margin: 30px;
+      justify-content: space-between;
+      align-items: center; }
+      body main .buscar h1 {
+        margin: 0;
+        padding: 0;
+        color: goldenrod;
+        font-family: Inter;
+        font-size: 20px;
+        font-size: 400; }
+      body main .buscar .buscador {
+        display: flex;
+        justify-content: right; }
+        body main .buscar .buscador .input-buscar {
+          height: 30px;
+          width: 200px;
+          padding: 0 5px 0 5px; }
+          body main .buscar .buscador .input-buscar:hover, body main .buscar .buscador .input-buscar:focus {
+            background-color: goldenrod;
+            border-color: goldenrod; }
+        body main .buscar .buscador .boton-buscar {
+          height: 30px;
+          width: 70px; }
+          body main .buscar .buscador .boton-buscar:hover {
+            color: white;
+            background-color: goldenrod; }
+    body main .jugador {
+      display: flex;
+      margin: 0 0 30px 10px; }
+      body main .jugador:hover {
+        background-color: #191919; }
+      body main .jugador:active {
+        color: black;
+        background-color: goldenrod; }
+      body main .jugador .imagen-integrante {
+        width: 200px;
+        max-height: 200px; }
+      body main .jugador .descripcion-integrante {
+        padding: 10px 30px 10px 30px;
+        grid-column-start: 2;
+        grid-column-end: 2; }
+        body main .jugador .descripcion-integrante h2 {
+          margin-bottom: 10px;
+          font-family: Inter;
+          color: goldenrod;
+          font-size: 20px;
+          font-size: 400; }
+        body main .jugador .descripcion-integrante p {
+          font-size: 15px; }
+    body main section .comentarios {
+      margin: 20px 0 20px 20px;
+      font-family: Inter;
+      color: goldenrod;
+      font-size: 25px;
+      font-size: 400; }
+    body main section .foro-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 20% 20px 20%;
+      padding: 20px;
+      border: 2px goldenrod solid;
+      border-radius: 25px; }
+      body main section .foro-form .h3-foro {
+        margin-bottom: 10px;
+        font-family: Inter;
+        color: goldenrod;
+        font-size: 25px; }
+      body main section .foro-form .foro-input {
+        display: flex;
+        flex-direction: row;
+        border-radius: 8px;
+        background-color: goldenrod;
+        color: black;
+        margin: 10px 0 10px 0;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100% !important; }
+        body main section .foro-form .foro-input input {
+          height: 40px;
+          border: none;
+          margin-left: 10px;
+          padding-left: 10px;
+          border-radius: 8px;
+          width: 100% !important; }
+        body main section .foro-form .foro-input textarea {
+          border: none;
+          margin-left: 10px;
+          padding: 10px;
+          border-radius: 8px;
+          width: 100% !important; }
+        body main section .foro-form .foro-input label {
+          display: block; }
+      body main section .foro-form .boton-enviar {
+        height: 30px;
+        width: 70px; }
+        body main section .foro-form .boton-enviar:hover {
+          color: white;
+          background-color: goldenrod; }
+
+.contenido header .navbar {
+  min-height: 80px;
+  border-bottom: 1px solid white; }
+
+.contenido header nav .container-fluid {
+  margin: 0 10px 0 10px;
+  padding: 0; }
+  .contenido header nav .container-fluid .web-logo {
+    height: 40px;
+    transition-property: height;
+    transition-duration: 0.15s; }
+    .contenido header nav .container-fluid .web-logo:hover {
+      height: 45px; }
+  .contenido header nav .container-fluid .navbar-toggler {
+    border: 1px solid white;
+    opacity: 50%; }
+    .contenido header nav .container-fluid .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  .contenido header nav .container-fluid div .me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important; }
+    .contenido header nav .container-fluid div .me-auto li .nav-link {
+      font-family: Inter;
+      font-size: 22px;
+      color: white;
+      text-decoration: none;
+      padding: 0px !important;
+      margin: 0 0 0 40px;
+      transition: 0.2s; }
+      .contenido header nav .container-fluid div .me-auto li .nav-link:hover {
+        color: goldenrod;
+        transform: translateX(-2px); }
+
+footer {
+  display: flex;
+  height: 120px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #011C39;
+  padding: 0; }
+  footer .link-wpp, footer .link-afa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 15px;
+    color: white;
+    margin-left: 8px; }
+    footer .link-wpp p, footer .link-afa p {
+      margin-bottom: 0px;
+      margin-left: 8px; }
+    footer .link-wpp .web-afa:hover, footer .link-afa .web-afa:hover {
+      content: url("../img/afa-gold.png"); }
+    footer .link-wpp .wpp-icon i, footer .link-afa .wpp-icon i {
+      color: white;
+      font-size: 60px;
+      height: 30px;
+      transition: color 0.15s;
+      transition-timing-function: ease-out; }
+      footer .link-wpp .wpp-icon i:hover, footer .link-afa .wpp-icon i:hover {
+        color: goldenrod; }
+
+@media screen and (max-width: 1440px) {
+  body .contenido {
+    margin: 0 8% 0 8%; } }
+
+@media screen and (max-width: 992px) {
+  body .contenido header nav .container-fluid {
+    margin: 0 10px 0 10px;
+    padding: 0; }
+    body .contenido header nav .container-fluid .navbar-toggler {
+      margin-bottom: 10px; }
+    body .contenido header nav .container-fluid div ul li .nav-link {
+      display: flex;
+      justify-content: right;
+      margin: 3px 0 3px 0;
+      font-size: 20px; }
+  body .contenido main .hero {
+    height: 550px; }
+  body .contenido main .buscar {
+    margin: 30px 15px 30px 15px; }
+    body .contenido main .buscar .buscador .input-buscar {
+      max-width: 145px;
+      font-size: 14px; }
+    body .contenido main .buscar .buscador .boton-buscar {
+      max-width: 55px;
+      font-size: 14px; }
+  body .contenido main .jugador .imagen-integrante {
+    height: 150px;
+    width: 150px; }
+  body .contenido main section .foro-form {
+    margin: 0 10% 20px 10%; }
+    body .contenido main section .foro-form .h3-foro {
+      font-size: 20px; } }
+
+@media screen and (max-width: 720px) {
+  body .contenido {
+    margin: 0;
+    box-shadow: none; }
+    body .contenido main .hero {
+      height: 500px; }
+      body .contenido main .hero .hero-text {
+        font-size: 30px; }
+    body .contenido main .jugador .imagen-integrante {
+      height: 100px;
+      width: 100px; }
+    body .contenido main .jugador .descripcion-integrante {
+      padding: 0 10px 10px 10px; } }
+
+@media screen and (max-width: 600px) {
+  body .contenido main .hero .hero-text {
+    font-size: 25px;
+    line-height: 40px; }
+  body .contenido main .info {
+    font-size: 25px;
+    line-height: 40px; }
+  body .contenido main .buscar h1 {
+    font-size: 15px; }
+  body .contenido main .jugador .descripcion-integrante {
+    padding: 0px 15px 10px 15px;
+    grid-column-start: 2;
+    grid-column-end: 2; }
+    body .contenido main .jugador .descripcion-integrante h2 {
+      font-size: 15px; }
+    body .contenido main .jugador .descripcion-integrante p {
+      font-size: 12px; }
+  body .contenido main .creacion h1 {
+    font-size: 20px; }
+  body .contenido main .titulos {
+    font-size: 20px; }
+  body .contenido main div div div .accordion-body {
+    font-size: 14px; }
+  body .contenido main section .comentarios {
+    font-size: 20px; }
+  body .contenido main section .foro-form .h3-foro {
+    font-size: 18px; }
+  body .contenido main section .foro-form .foro-input label {
+    display: none; }
+  body .contenido footer .link-wpp,
+  body .contenido footer .link-afa {
+    width: 160px; }
+    body .contenido footer .link-wpp p,
+    body .contenido footer .link-afa p {
+      font-size: 12px; }
+    body .contenido footer .link-wpp .web-afa,
+    body .contenido footer .link-afa .web-afa {
+      width: 50px; }
+    body .contenido footer .link-wpp .wpp-icon i,
+    body .contenido footer .link-afa .wpp-icon i {
+      font-size: 45px; } }
+
+@media screen and (max-width: 400px) {
+  body .contenido main .hero .hero-text {
+    font-size: 20px;
+    line-height: 30px; }
+  body .contenido main .info {
+    height: 350px;
+    font-size: 20px;
+    line-height: 30px; }
+  body .contenido main .buscar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .contenido main .buscar h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 15px; }
+  body .contenido main .jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .contenido main .jugador .imagen-integrante {
+      margin-bottom: 10px; }
+    body .contenido main .jugador .descripcion-integrante {
+      padding: 5px 5px 5px 5px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      text-align: center; }
+  body .contenido main .creacion p {
+    font-size: 12px; }
+  body .contenido main div div div .accordion-body {
+    font-size: 12px; }
+  body .contenido main section .foro-form {
+    margin: 0 10px 20px 10px; }
+    body .contenido main section .foro-form .h3-foro,
+    body .contenido main section .foro-form .foro-input {
+      font-size: 14px; }
+  body .contenido footer .link-wpp,
+  body .contenido footer .link-afa {
+    width: auto; }
+    body .contenido footer .link-wpp p,
+    body .contenido footer .link-afa p {
+      display: none; } }

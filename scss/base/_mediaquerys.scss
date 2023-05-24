@@ -1,0 +1,295 @@
+@media screen and (max-width: 1440px) {
+    body {
+        .contenido {
+            margin: 0 8% 0 8%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        .contenido {
+            header {
+                nav {
+                    .container-fluid {
+                        margin: 0 10px 0 10px;
+                        padding: 0;
+
+                        .navbar-toggler {
+                            margin-bottom: 10px;
+                        }
+
+                        div {
+                            ul {
+                                li {
+                                    .nav-link {
+                                        display: flex;
+                                        justify-content: right;
+                                        margin: 3px 0 3px 0;
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            main {
+                .hero {
+                    height: 550px;
+                }
+
+                .buscar {
+                    margin: 30px 15px 30px 15px;
+
+                    .buscador {
+                        .input-buscar {
+                            max-width: 145px;
+                            font-size: 14px;
+                        }
+
+                        .boton-buscar {
+                            max-width: 55px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .jugador {
+                    .imagen-integrante {
+                        height: 150px;
+                        width: 150px;
+                    }
+                }
+
+                section {
+                    .foro-form {
+                        margin: 0 10% 20px 10%;
+
+                        .h3-foro {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        .contenido {
+            margin: 0;
+            box-shadow: none;
+
+            main {
+                .hero {
+                    height: 500px;
+
+                    .hero-text {
+                        font-size: 30px;
+                    }
+                }
+
+                .jugador {
+                    .imagen-integrante {
+                        height: 100px;
+                        width: 100px;
+                    }
+
+                    .descripcion-integrante {
+                        padding: 0 10px 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        .contenido {
+            main {
+                .hero {
+                    .hero-text {
+                        font-size: 25px;
+                        line-height: 40px;
+                    }
+                }
+
+                .info {
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+
+                .buscar {
+                    h1 {
+                        font-size: 15px;
+                    }
+                }
+
+                .jugador {
+                    .descripcion-integrante {
+                        padding: 0px 15px 10px 15px;
+                        grid-column-start: 2;
+                        grid-column-end: 2;
+
+                        h2 {
+                            font-size: 15px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .creacion {
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+
+                .titulos {
+                    font-size: 20px;
+                }
+
+                div {
+                    div {
+                        div {
+                            .accordion-body {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    .comentarios {
+                        font-size: 20px;
+                    }
+
+                    .foro-form {
+                        .h3-foro {
+                            font-size: 18px;
+                        }
+
+                        .foro-input label {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            footer {
+
+                .link-wpp,
+                .link-afa {
+                    width: 160px;
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    .web-afa {
+                        width: 50px;
+                    }
+
+                    .wpp-icon i {
+                        font-size: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        .contenido {
+            main {
+                .hero {
+                    .hero-text {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                .info {
+                    height: 350px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                .buscar {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                    }
+                }
+
+                .jugador {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .imagen-integrante {
+                        margin-bottom: 10px;
+                    }
+
+                    .descripcion-integrante {
+                        padding: 5px 5px 5px 5px;
+                        grid-column-start: 2;
+                        grid-column-end: 2;
+                        text-align: center;
+                    }
+                }
+
+                .creacion {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+
+                div {
+                    div {
+                        div {
+                            .accordion-body {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    .foro-form {
+                        margin: 0 10px 20px 10px;
+
+                        .h3-foro,
+                        .foro-input {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+
+                .link-wpp,
+                .link-afa {
+                    width: auto;
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

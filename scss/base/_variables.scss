@@ -1,0 +1,36 @@
+/*USO DE VARIABLES*/
+
+$color-page: #011C39;
+$color-main: #042240;
+$color-acento: goldenrod;
+$color-texto: white;
+$color-contraste: white;
+$color-oscuro: #191919;
+
+$web-font: Inter;
+
+/*USO DE LISTAS*/
+
+$weight-fuente:
+100,
+400,
+800;
+
+/*USO DE EXTEND*/
+
+%centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*USO DE MIXINS*/
+
+@mixin text ($family, $size, $weight, $style, $color) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    color: $color;    
+}
