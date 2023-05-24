@@ -100,7 +100,6 @@ body {
             }
         }
 
-
         /*PAGINA INTEGRANTES*/
         .buscar {
             display: flex;
@@ -152,6 +151,9 @@ body {
                 color: black;
                 background-color: $color-acento;
             }
+            &:active .descripcion-integrante h2{
+                color: black;
+            }
             .imagen-integrante {
                 width: 200px;
                 max-height: 200px;
@@ -165,9 +167,9 @@ body {
                 h2 {
                     margin-bottom: 10px;
                     font-family: $web-font;
-                    color: $color-acento;
                     font-size: 20px;
                     font-size: nth($weight-fuente, 2);
+                    color: $color-acento;
                 }
 
                 p {
