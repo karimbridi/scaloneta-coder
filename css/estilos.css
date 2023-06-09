@@ -69,14 +69,14 @@ body {
       font-size: 25px;
       font-weight: 400; }
     body main .creacion .h3-historia {
-      padding: 20px 0 0 10px;
+      padding: 20px 0 0 20px;
       color: goldenrod;
       font-family: Inter;
       font-size: 20px;
       font-size: 400; }
     body main .creacion P {
       text-align: justify;
-      margin: 10px 10px 10px 10px; }
+      margin: 10px 20px 10px 20px; }
     body main .titulos {
       margin: 20px 0 20px 20px;
       font-family: Inter;
